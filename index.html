@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg pt-2 pb-3">
+        <div class="container-fluid mx-5 py-3">
+            <a class="navbar-brand ms-5 d-flex justify-content-between align-items-center text-white" href="#">
+                <img src="images/logo.png" class="w-100 pe-3" alt="">
+                <div class="mt-2">
+                    <h1 class="fs-6" style="font-weight: bold;">Weather</h1>
+                    <p class="describtion">tagline goes here</p>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse me-4" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link active me-2 " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-2 " aria-current="page" href="#">News</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link me-2 " aria-current="page" href="#">Live cameras</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link me-2 " aria-current="page" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link me-2 " aria-current="page" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="search">
+        <div class="container">
+            <div class="py-4 position-relative">
+                <input id="search" type="text" class="search-input text-white form-control px-3 py-3 rounded-pill"
+                    placeholder="Find your location...">
+                <button id="submit" class="btn text-white">Find</button>
+            </div>
+        </div>
+    </div>
+    <div class="weather-info mb-5">
+        <div class="container">
+            <div class="row cards justify-content-between w-100 flex-wrap">
+                <!-- <div class="col-md-4 p-0 m-0 weather-day">
+                    <div class="card-header d-flex justify-content-between text-center">
+                        <div class="day">Wednesday</div>
+                        <div class="date">2October</div>
+                    </div>
+                    <div class="card-body text-start px-4 py-3">
+                        <div class="city">Cairo</div>
+                        <div class="degree py-2">
+                            <div class="num">
+                                28.4&deg;C
+                            </div>
+                            <div class="icon-weatherState">
+                                <i class="fa-regular fa-sun" style="color: #FFD43B;"></i>
+                            </div>
+                        </div>
+                        <div class="state">
+                            Sunny
+                        </div>
+                        <div class="pt-3 icon-footer">
+                            <span class="pe-2"><i class="fa-solid fa-umbrella"></i> 20%</span>
+                            <span class="pe-2"><i class="fa-solid fa-wind"></i> 18km/h</span>
+                            <span><i class="fa-solid fa-compass"></i> East</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 p-0 weather-tomorrow text-center">
+                    <div class="card-header">
+                        <div class="day">Thursday</div>
+                    </div>
+                    <div class="card-body px-4">
+                        <div class="degree">
+                            <div class="icon-weatherState">
+                                <i class="fa-regular fa-sun" style="color: #FFD43B; font-size: 30px;"></i>
+                            </div>
+                            <div class="num d-flex flex-column" style="font-size: 26px;">
+                                <div>
+                                    28.4&deg;C
+                                </div>
+                                <div style="font-weight: 400; color: #bfc1c8; font-size: 20px;">28.4&deg;</div>
+
+
+                            </div>
+
+                        </div>
+                        <div class="state mt-4">
+                            Sunny
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <div class="col-md-4 p-0 weather-afterTomorrow text-center">
+                    <div class="card-header">
+                        <div class="day">Friday</div>
+                    </div>
+                    <div class="card-body px-4">
+                        <div class="degree">
+                            <div class="icon-weatherState">
+                                <i class="fa-regular fa-sun" style="color: #FFD43B; font-size: 30px;"></i>
+                            </div>
+                            <div class="num d-flex flex-column" style="font-size: 26px;">
+                                <div>
+                                    28.4&deg;C
+                                </div>
+                                <div style="font-weight: 400; color: #bfc1c8; font-size: 20px;">28.4&deg;</div>
+
+
+                            </div>
+
+                        </div>
+                        <div class="state mt-4">
+                            Sunny
+                        </div>
+
+
+
+
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="col-md-8 col-sm-12">
+                        <div class="py-4 position-relative">
+                            <input type="text" class="search-input text-white form-control px-3 py-3 rounded-pill"
+                                placeholder="Enter your email to subscribe...">
+                            <button id="subscribe" class="btn text-white">Subscribe</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="circle me-2">
+                            <i class="fa-brands fa-facebook-f fa-lg position-absolute" style="color: #009ad8;"></i>
+                        </div>
+                        <div class="circle me-2">
+                            <i class="fa-brands fa-twitter fa-lg position-absolute" style="color: #009ad8;"></i>
+                        </div>
+                        <div class="circle me-2">
+                            <i class="fa-brands fa-google-plus-g fa-lg position-absolute" style="color: #009ad8;"></i>
+                        </div>
+                        <div class="circle me-2">
+                            <i class="fa-brands fa-pinterest fa-lg position-absolute" style="color: #009ad8;"></i>
+                        </div>
+
+                    </div>
+                </div>
+                <p class="col-12">Copyright 2014 Company name. Designed by Mohamed said. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
